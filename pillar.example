@@ -8,6 +8,7 @@ mongodb:
   version: 3.2 # use oldstable in for 1.8 - 2.6
   repo_component: multiverse    # this is for Ubuntu, use 'main' for Debian
   mongodb_package: mongodb-org
+  mongodb_package_version: 3.2.0
   mongodb_user: mongodb
   mongodb_group: mongodb
   mongod: mongod

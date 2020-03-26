@@ -49,6 +49,9 @@ mongodb_repo:
 mongodb_package:
   pkg.installed:
     - name: {{ mdb.mongodb_package }}
+    {%- if mdb.mongodb_package_version %}
+    - version: {{ mdb.mongodb_package_version }}
+    {%- endif %}
 
 mongodb_log_path:
   file.directory:
