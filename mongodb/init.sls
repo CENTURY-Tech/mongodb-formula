@@ -49,7 +49,7 @@ mongodb_repo:
 mongodb_package:
   pkg.installed:
     - name: {{ mdb.mongodb_package }}
-    {%- if mdb.mongodb_package_version %}
+    {%- if 'mongod_settings' in mdb %}
     - version: {{ mdb.mongodb_package_version }}
     {%- endif %}
 
